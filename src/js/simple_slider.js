@@ -19,8 +19,8 @@ export default class Slider {
     if (typeof (newConfigObject) === 'object') {
       for (let setting in newConfigObject) {
         this[setting] = newConfigObject[setting];
-			}
-		}
+      }
+    }
 
     addWrapper(sliderElementId);
     addSliderClass(sliderElementId);
