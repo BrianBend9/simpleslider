@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prod": "webpack  --progress --watch --mode=build; node-sass --output-style compressed -o lib/css src/scss",
-    "dev": "webpack --progress --colors --watch --mode=dev; node-sass --output-style expanded -o lib/css src/scss",
+    "prod": "node-sass --output-style compressed -o lib/css src/scss; webpack  --progress --watch --mode=build",
+    "dev": "node-sass --output-style expanded -o lib/css src/scss; webpack --progress --colors --watch --mode=dev",
     "test": "mocha --compilers js:babel/register --colors -w ./test/*.spec.js"
   },
   "repository": {

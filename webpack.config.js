@@ -9,13 +9,13 @@ if(env === 'build') {
 }
 
 module.exports = {
-  entry: ['./index.js'],
+  entry: ['./src/js/simple_slider'],
   devtool: 'source-map',
   output: {
-    library: 'LibraryTest',
+    library: 'Slider',
     libraryTarget: 'umd',
-    path: path.resolve(__dirname),
-    filename: env === 'build' ? 'LibraryTest.min.js' : 'LibraryTest.js',
+    path: path.resolve(__dirname, "lib", "js"),
+    filename: env === 'build' ? 'Slider.min.js' : 'Slider.js',
     umdNamedDefine: true
   },
 
