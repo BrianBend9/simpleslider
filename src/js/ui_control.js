@@ -20,9 +20,8 @@ function startAutoPlayTimer(sliderObject, callbackFn, delay) {
 }
 
 function resetAutoPlayTimer(sliderObject) {
-  clearInterval(sliderObject.timeoutId);
-  sliderObject.timeoutId = undefined;
-  console.log(sliderObject.timeoutId);
+  clearInterval(sliderObject.intervalId);
+  sliderObject.intervalId = undefined;
   startAutoPlayTimer(sliderObject, slide, sliderObject.autoPlayDelay);
 }
 
@@ -46,7 +45,7 @@ function slide(event) {
   const images = document.getElementById(sliderElementId).children;
   const sliderObject = event.type === undefined ? event : getInstanceOf(Slider, sliderElementId, window);
 
-  if (event.type !== undefined && sliderObject.timeoutId !== undefined) {
+  if (event.type !== undefined && sliderObject.intervalId !== undefined) {
     resetAutoPlayTimer(sliderObject);
   }
 

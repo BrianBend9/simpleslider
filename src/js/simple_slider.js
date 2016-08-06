@@ -6,11 +6,11 @@ export default class Slider {
 
   constructor(sliderElementId, newConfigObject) {
     let activeImageIndex;
-    let timeoutId;
+    let intervalId;
     let images = document.getElementById(sliderElementId).children;
 
     this.elementId = sliderElementId;
-    this.timeoutId = timeoutId;
+    this.intervalId = intervalId;
     this.navButtons = true;
     this.autoPlay = true;
     this.autoPlayDelay = 3000;

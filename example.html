@@ -7,11 +7,11 @@
     <script src="lib/js/Slider.min.js" charset="utf-8" ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>My Slider Demo</title>
+    <title>Simple Slider Demo</title>
   </head>
   <body>
     <div id="example">
-      <ul id="images">
+      <ul id="simpsons-slider">
         <li><img src="src/images/simpsons-logo.png" alt="simpsons-logo"></li>
         <li><img src="http://vignette3.wikia.nocookie.net/simpsons/images/0/0b/Marge_Simpson.png/revision/20140826010629" alt="marge"></li>
         <li><img src="http://bartsimpsonpictures.squarelogic.net/bart-simpson-08.gif" alt="bart"></li>
@@ -19,5 +19,12 @@
         <li><img src="src/images/mcbain.jpg" alt="mcbain"></li>
       </ul>
     </div>
+    <script type="text/javascript">
+      var example = new Slider("simpsons-slider", {
+        navButtons: true,
+        autoPlay: true,
+        autoPlayDelay: 8000
+      });
+    </script>
   </body>
 </html>
