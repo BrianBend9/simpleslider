@@ -1,4 +1,4 @@
-# myslider
+# Simple Slider
 
 This is a basic image slider created using html, css, and vanilla javascript(es6).
 
@@ -8,8 +8,8 @@ In your .js file linked to your html page, the slider needs to be instantiated u
 and a configuration object as follows:
 
 ```
-MySlider.init(sliderElementId, {
-"settingName": setting
+var variable = new Slider(sliderElementId, {
+  setting: value,
 });
 ```
 
